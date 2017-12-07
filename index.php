@@ -61,68 +61,42 @@
 
 
 
-<div class="container-fluid titredeux">
+
+
+
+
+
+
+<!---- Exemple de section (typologie : section>container>row>col-md-4), utilisation de h2 class title-section pour les titres des autres sections (définie dans le css), utilisation class img-responsive pour les images, utilisation de hr(séparateurs sous le titre) class hr_white définie dans le css, a utiliser pour les autres sections, présence d'une class hr_black pour les sections a fond clair ------------->
+
+<section id="annonces">
+
+<div class="container">
 
     <div class="row">
-
-        <a class=" col-md-3 titredeuxpolice btn btn-primary"> Dernières Annonces </a>
-
-
-
-
+        <h2 class="title-section ">Dernières Annonces</h2>
+        <hr class="hr_white">
     </div>
 
-</div>
-
-
-
-
-
-
-
-
-
-<div class="container-fluid annonces">
-
     <div class="row">
 
-        <div class="col-md-4 premiere exempleimg">
+        <div class="col-md-4">
             <img src="<?php echo get_template_directory_uri(); ?>/img/exemplevoiture.jpg" class='img-responsive'>
 
         </div>
 
-        <div class=" col-md-4 deuxième exempleimg">
-
+        <div class=" col-md-4">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/exemplevoiture.jpg" class='img-responsive'>
         </div>
 
-        <div class=" col-md-4 troisième exempleimg">
-
+        <div class=" col-md-4">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/exemplevoiture.jpg" class='img-responsive'>
         </div>
 
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
-
+</section>
 
 
 

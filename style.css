@@ -151,61 +151,31 @@ body {
 }
 
 
-
-.annonces {
-
-    background-color: #004EB2!important;
-    height: 500px;
-    margin-top: -190px;
-
+#annonces {
+    background-color: #004EB2;
+    padding: 50px 0px;
 }
 
 
-.premiere {
-
-    background-color: white;
-    height: 400px;
-    width: 500px;
-    margin-top: 55px;
-    margin-left: 55px;
-    opacity: 0.8;
-
+.title-section{
+    text-transform: uppercase;
+    text-align: center;
 }
 
-
-.deuxième {
-
-    background-color: white;
-    height: 400px;
-    width: 500px;
-    margin-top: -445px;
-    margin-left: 600px;
-    opacity: 0.8;
-    background-size: contain;
+.hr_white{
+    width: 10%;
+    color: #fff;
+    border-top: 2px solid #fff;
 }
 
-
-.troisième {
-
-    background-color: white;
-    height: 400px;
-    width: 500px;
-    margin-top: -445px;
-    margin-left: 1140px;
-    opacity: 0.8;
-    background-size: contain;
+.hr_black{
+    width: 10%;
+    color: #000000;
+    border-top: 2px solid #000000;
 }
 
 
 
-
-.exempleimg {
-
-    background-image: url("../img/exemplevoiturev2.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    opacity: 0.8;
-}
 
 
 .respon {
