@@ -13,3 +13,226 @@
     height: 800px;
     background-color: aqua;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+    height: 100%;
+    background-size: cover; /* version standardisée */
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/* Navbar du one page */
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-container {
+    padding: 20px 0 20px 0;
+}
+
+.navbar.navbar-fixed-top.fixed-theme {
+    background-color: #222;
+    border-color: #080808;
+    box-shadow: 0 0 5px rgba(0,0,0,.8);
+}
+
+.navbar-brand.fixed-theme {
+    font-size: 18px;
+}
+
+.navbar-container.fixed-theme {
+    padding: 0;
+}
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container{
+    transition: 0.8s;
+    -webkit-transition:  0.8s;
+}
+
+
+.lanavbar {
+    height: 200px;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+}
+
+
+
+
+
+/* fin navbar du one page */
+
+
+.imageonepage {
+    background-image: url("../img/onepage1web.jpg");
+    height: 1300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -450px;
+    width: 100%!important;
+
+}
+
+
+
+
+.title {
+    font-size: 3em;
+    font-family: 'Trocchi', bold, sans-serif;
+    margin-top: 120px;
+    margin-left: -140px;
+    color: #004EB2!important;
+}
+
+
+@media (min-width: 950px) {
+    .container .title {
+        width: 700px;
+    }
+}
+
+
+
+
+/* deuxième partie les annonces */
+
+
+
+
+.titredeux {
+
+    background-color: white!important;
+    height: 400px;
+    margin-top: -340px;
+    background-size: contain;
+
+}
+
+
+.titredeuxpolice {
+
+    margin-left: 630px;
+    font-family: 'Raleway', serif;
+    margin-top: 70px;
+    font-size: 2.5em;
+    color: white!important;
+}
+
+
+
+.annonces {
+
+    background-color: #004EB2!important;
+    height: 500px;
+    margin-top: -190px;
+
+}
+
+
+.premiere {
+
+    background-color: white;
+    height: 400px;
+    width: 500px;
+    margin-top: 55px;
+    margin-left: 55px;
+    opacity: 0.8;
+
+}
+
+
+.deuxième {
+
+    background-color: white;
+    height: 400px;
+    width: 500px;
+    margin-top: -445px;
+    margin-left: 600px;
+    opacity: 0.8;
+    background-size: contain;
+}
+
+
+.troisième {
+
+    background-color: white;
+    height: 400px;
+    width: 500px;
+    margin-top: -445px;
+    margin-left: 1140px;
+    opacity: 0.8;
+    background-size: contain;
+}
+
+
+
+
+.exempleimg {
+
+    background-image: url("../img/exemplevoiturev2.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.8;
+}
+
+
+.respon {
+
+}
+
+
+
+
+.inscription {
+
+    margin-left: 550px;
+    margin-top: 80px;
+    height: 200px;
+}
+
+.inscription2 {
+
+    margin-top: -35px;
+}
+
+
+
+
+
+
+
+
+
+
