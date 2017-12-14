@@ -14,6 +14,11 @@
     background-color: aqua;
 }
 
+.input-name{
+    border-radius: 0;
+    border: 0;
+    background-color: #fff;
+}
 
 
 
@@ -150,6 +155,7 @@ body {
     color: white!important;
 }
 
+/* Section annonces, couleur de la section, titres pour les sections et separateurs */
 
 #annonces {
     background-color: #004EB2;
@@ -174,7 +180,9 @@ body {
     border-top: 2px solid #000000;
 }
 
-
+.desc-annonces{
+    margin: 0;
+}
 
 
 
@@ -197,9 +205,165 @@ body {
     margin-top: -35px;
 }
 
+.credits{
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+.facebook , .insta, .linkedin{
+    text-align: center;
+}
 
 
 
+
+
+
+.navbar-inverse{
+    background-color: #fff!important;
+    border: 0!important;
+    border-radius: 0!important;
+    margin-bottom: 0!important;
+}
+
+
+/* Mon css */
+
+/* Style Navbar css */
+
+
+.imageone {
+
+    background-size: contain;
+}
+
+.premierblock {
+    background-color: #022395!important;
+}
+
+
+/* Style Navbar css */
+
+
+.titreannonces {
+
+    color: white;
+
+}
+
+
+.hrpremiere {
+
+    height: 1px;
+    background-color: white;
+    width: 200px;
+}
+
+
+
+.couleursstyles2 {
+
+    background-color: #022395;
+
+}
+
+.couleurstyle {
+
+    background-color: #022395!important;
+}
+
+
+
+
+
+
+
+/* Fin Navbar et premier block */
+
+
+
+
+
+.blockmini {
+
+    margin-top: 10px;
+
+}
+
+
+.couleursstyles3 {
+
+    background-color: black;
+
+
+}
+
+
+
+
+
+.adresse {
+
+    color: white;
+}
+
+
+.adressepolice {
+
+    font-size: 1.2em;
+
+}
+
+
+.adresspolicefirst {
+
+    font-size: 2em;
+}
+
+
+.adressepolice2 {
+
+    font-size: 1.2em;
+}
+
+.adressepolice3 {
+
+    font-size: 1.2em ;
+}
+
+
+
+.premeirblockformulaire {
+
+    margin-left: -50px;
+}
+
+
+.finformulaire {
+
+    background-color: #000000;
+    height: 100px;
+}
+
+
+.footerbap {
+    background-color: black!important;
+}
+
+
+
+.deplacementréseaux {
+    margin-top: 40px;
+}
+
+
+.debutfooter {
+
+    background-color: #202226;
+    height: 20px;
+}
 
 
 
