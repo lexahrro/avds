@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600');
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
 .navbar-inverse{
     background-color: #fff!important;
     border: 0!important;
@@ -10,8 +23,8 @@
 }
 
 .section-annonces{
-    height: 800px;
-    background-color: aqua;
+
+    background-color: #fff;
 }
 
 .input-name{
@@ -20,36 +33,74 @@
     background-color: #fff;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-html {
-    height: 100%;
-    background-size: cover; /* version standardisée */
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+    background: #fff;
+    height: 5rem;
 }
 
-body {
-    min-height: 100%;
+.input-text{
+    height: 15rem!important;
+    border: 0;
+    border-radius: 0;
+}
+
+.form-group{
+    margin-bottom: 0;
+}
+
+
+.btn-envoyer{
+    margin-top: 20px;
+    padding: 30px 50px;
+    line-height: 0;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+
+
+
+.btn-lacentrale{
+    margin-top: 20px;
+    padding: 30px 50px;
+    line-height: 0;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background:#000;
+    padding: 5px 15px;
+    text-transform: uppercase;
+
+}
+
+.container-img{
+    position: relative;
+    color: white;
+
+}
+
+.vendu{
     margin: 0;
-    padding: 0;
-
+    font-size: 1.2em;
+    color: #dc2c0b;
 }
+
+.quote-lacentrale{
+    display: block;
+    margin-right: 15%;
+    margin-top: 10px;
+}
+
+
+
+
+
+
 
 
 /* Navbar du one page */
@@ -155,17 +206,19 @@ body {
     color: white!important;
 }
 
-/* Section annonces, couleur de la section, titres pour les sections et separateurs */
-
-#annonces {
-    background-color: #004EB2;
-    padding: 50px 0px;
-}
 
 
-.title-section{
+
+.title-section-white{
     text-transform: uppercase;
     text-align: center;
+    color: #fff;
+}
+
+.title-section-black{
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
 }
 
 .hr_white{
@@ -182,12 +235,6 @@ body {
 
 .desc-annonces{
     margin: 0;
-}
-
-
-
-.respon {
-
 }
 
 
@@ -247,35 +294,63 @@ body {
 /* Style Navbar css */
 
 
-.titreannonces {
-
-    color: white;
-
-}
 
 
-.hrpremiere {
-
-    height: 1px;
-    background-color: white;
-    width: 200px;
+.section-padding{
+    padding: 60px 0px;
 }
 
 
 
-.couleursstyles2 {
+.section-contact {
 
-    background-color: #022395;
+    background: url(img/bg_contact.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 
 }
+
+.input{
+    padding: 10px;
+}
+
+input::placeholder {
+    color: #3a3a3a !important;
+    padding: 10px;
+    font-size: 1.2em!important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:300;
+}
+
+textarea::placeholder {
+    color: #3a3a3a !important;
+    padding: 10px;
+    font-size: 1em!important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:300;
+}
+
+
 
 .couleurstyle {
 
     background-color: #022395!important;
 }
 
+textarea.form-control{
+    padding: 0!important;
+}
 
 
+.title-contact{
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 0 50px 0;
+    font-size: 2em;
+}
 
 
 
@@ -305,15 +380,18 @@ body {
 
 
 .adresse {
-
     color: white;
+    line-height: 0;
+    vertical-align: middle;
+
+
 }
 
 
 .adressepolice {
 
     font-size: 1.2em;
-
+    color: #fff;
 }
 
 
@@ -365,6 +443,12 @@ body {
     height: 20px;
 }
 
+
+.annonces-call{
+    color: #2c4495;
+    line-height: 1.2;
+    font-weight: 600;
+}
 
 
 

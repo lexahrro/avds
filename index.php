@@ -1,56 +1,10 @@
 <?php require_once('header.php') ?>
 
-<div class="parallax-container">
-    <div class="parallax"><img src="<?php echo get_template_directory_uri(); ?>/img/header.jpeg" class="img-responsive"></div>
-</div>
-<div class="section white">
-    <div class="row container">
-        <h2 class="header">Parallax</h2>
-        <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+<section class="section-header">
+    <div class="parallax-container">
+        <div class="parallax"><img src="<?php echo get_template_directory_uri(); ?>/img/header.jpeg" class="img-responsive"></div>
     </div>
-</div>
-
-<section id="mot-clef" class="section-annonces">
-
-
-
 </section>
-
-
-
-
-
-
-
-
-
-
-
-<div class="container">
-
-    <div class="row">
-
-
-
-        <a class="title">Votre voiture d'occasion au meilleur prix</a>
-
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="imageonepage"></div>
-
-
-
-
 
 
 
@@ -60,12 +14,12 @@
 
 <!---- Exemple de section (typologie : section>container>row>col-md-4), utilisation de h2 class title-section pour les titres des autres sections (définie dans le css), utilisation class img-responsive pour les images, utilisation de hr(séparateurs sous le titre) class hr_white définie dans le css, a utiliser pour les autres sections, présence d'une class hr_black pour les sections a fond clair ------------->
 
-<section id="annonces">
+<section id="annonces" class="section-annonces section-padding">
 <div class="container">
 
     <div class="row">
-        <h2 class="title-section ">Dernières Annonces</h2>
-        <hr class="hr_white">
+        <h2 class="title-section-black">Dernières Annonces</h2>
+        <hr class="hr_black">
     </div>
 
     <div class="row">
@@ -75,10 +29,15 @@
         <?php $loop = new WP_Query( array( 'post_type' => 'voiture', 'posts_per_page' => '3' ) ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
         <div class="col-md-4">
+            <div class="container-img">
             <?php
             $image = get_field('image');
             if( !empty($image) ): ?>
                 <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="img-responsive" />
+                <?php if( get_field('vendu') == 'Oui' ): ?>
+                    <div class="bottom-right"><h3 class="vendu">Vendu</h3></div>
+                <?php endif; ?>
+            </div>
             <?php endif; ?>
             <div class="row desc-annonces">
                 <div class="col-md-7 col-xs-7">
@@ -108,15 +67,15 @@
 
         <div class="col-md-8">
 
-            <h1 class="titreannonces2">Retrouvez plus de vehicules sur notre vitrine LaCentrale.fr</h1>
+            <h1 class="annonces-call">Retrouvez plus de vehicules sur notre vitrine LaCentrale.fr</h1>
 
         </div>
 
         <div class="col-md-4  blockmini">
 
-            <a class="btn btn-success pull-right" href="">Toutes les annonces</a>
+            <a class="btn btn-lacentrale pull-right" href="">Toutes les annonces</a>
 
-            <p class="pull-right">Via le site de LaCentrale.fr</p>
+            <p class="pull-right quote-lacentrale">Via le site de LaCentrale.fr</p>
 
         </div>
 
@@ -134,8 +93,8 @@
     <div class="container">
 
         <div class="row">
-            <h2 class="title-section titreapropos center">A Propos</h2>
-            <hr class="hr white hrpremiere">
+            <h2 class="title-section-white titreapropos center">A Propos</h2>
+            <hr class="hr_white">
         </div>
 
         <div class="row">
@@ -168,8 +127,8 @@
     <div class="container">
 
         <div class="row">
-            <h2 class="title-section titreeco center">AVDS Eco</h2>
-            <hr class="hr black hreco">
+            <h2 class="title-section-black titreeco center">AVDS Eco</h2>
+            <hr class="hr_black">
         </div>
 
         <div class="row">
@@ -212,12 +171,12 @@
 
 
 
-<section class="couleursstyles3">
+<section class="section-contact section-padding">
 
     <div class="container">
 
         <div class="row">
-            <h2 class="title-section titreannonces center">Contact</h2>
+            <h2 class="title-section-white titreannonces center">Contact</h2>
             <hr class="hr_white hrpremiere">
         </div>
 
@@ -225,20 +184,19 @@
 
             <div class="col-md-6">
 
-                <div class=" remeirblockformulaire">
 
-                    <p  class="adresspolicefirst">Automobiles du Val de Seine</p>
-
-                </div>
+                    <h3 class="title-contact">Automobiles du Val de Seine</h3>
 
 
 
-                        <a  href="#" class="active nav-link adressepolice"><i class="fa fa-home adresse" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;1 rue Jean Lefebvre 95530 LA FRETTE SUR SEINE</a>
+
+
+                        <p  href="#" class="active nav-link adressepolice"><i class="fa fa-map-marker fa-2x adresse" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;1 rue Jean Lefebvre 95530 LA FRETTE SUR SEINE</p>
                         <br>
-                        <a href="#" class="nav-link active adressepolice2" ><i class="fa fa-phone adresse" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;06 14 32 74 78</a>
+                        <p href="#" class="nav-link active adressepolice" ><i class="fa fa-phone fa-2x adresse" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;06 14 32 74 78</p>
 
                         <br>
-                        <a  href="#" class="nav-link active adressepolice3"><i class="fa fa-globe adresse" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;http://pros.lacentrale.fr/C043313</a>
+                        <p  href="#" class="nav-link active adressepolice"><i class="fa fa-globe fa-2x adresse" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;http://pros.lacentrale.fr/C043313</p>
 
 
 
@@ -252,18 +210,18 @@
 
                 <form>
 
-                    <div class="form-group"> <label for="InputName"></label>
+                    <div class="form-group">
                         <input type="text" class="form-control input-name"  id="InputName" placeholder="Nom et Prénom">
                     </div>
 
-                    <div class="form-group"> <label for="InputEmail1"></label>
+                    <div class="form-group">
 
-                        <input type="email" class="input-email"  style="font-family: Arial Narrow; font-size: 1em;  font-weight: bold" class="form-control" id="InputEmail1" placeholder="Enter email">
+                        <input type="email" class="input-email"  class="form-control" id="InputEmail1" placeholder="Enter email">
                     </div>
 
-                    <div class="form-group"> <label for="Textarea"></label> <textarea class="form-control input-text" id="Textarea" rows="3" placeholder="Votre message"></textarea> </div>
+                    <div class="form-group"><textarea class="form-control input-text" id="Textarea" rows="3" placeholder="Votre message"></textarea> </div>
 
-                    <button type="submit" class="btn btn-success">Envoyer</button>
+                    <button type="submit" class="btn  pull-right btn-envoyer">Envoyer</button>
 
                 </form>
 
@@ -340,7 +298,7 @@
 
             <div class="col-md-4 col-md-offset-4">
 
-                <p class="credits">2017 © AUTOMOBILES DU VAL DE SEINE<br>TVA Intracommunautaire - Siret - RCS
+                <p class="credits">2017 © AUTOMOBILES DU VAL DE SEINE<br>TVA Intracommunautaire<br> - 82534063100019 - RCS
                 </p>
 
 
