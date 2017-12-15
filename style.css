@@ -323,6 +323,7 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 }
 
 .credits{
+    margin-top: 30px;
     text-align: center;
     text-transform: uppercase;
     color: #fff;
@@ -510,8 +511,8 @@ textarea.form-control{
 }
 
 
-.footerbap {
-    background-color: black!important;
+.footer {
+    background-color: #202226;
 }
 
 
@@ -521,11 +522,7 @@ textarea.form-control{
 }
 
 
-.debutfooter {
 
-    background-color: #202226;
-    height: 20px;
-}
 
 
 .annonces-call{
