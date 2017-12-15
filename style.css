@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600');
 
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6, .btn{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
@@ -11,20 +11,33 @@ p{
     font-weight: 300;
 }
 
+
+
 .navbar-inverse{
     background-color: #fff!important;
     border: 0!important;
     border-radius: 0!important;
     margin-bottom: 0!important;
+    min-height: 70px;
+    z-index: 10;
+
 }
 
 .navbar-right{
-    padding: 5px;
+    padding: 10px;
 }
 
 .section-annonces{
 
     background-color: #fff;
+}
+
+.section-header{
+    z-index: 1;
+}
+
+.section-apropos{
+    background-color: #2c4495;
 }
 
 .input-name{
@@ -68,6 +81,25 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     border-radius: 0;
 }
 
+.btn-header{
+    position: absolute;
+    margin-top: 20px;
+    padding: 30px 50px;
+    line-height: 0;
+    text-transform: uppercase;
+    border-radius: 0;
+    transform: translate(0%, 350%);
+}
+
+
+.btn-plus{
+    margin-top: 20px;
+    padding: 30px 50px;
+    line-height: 0;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
 .bottom-right {
     position: absolute;
     bottom: 0;
@@ -81,6 +113,8 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 .container-img{
     position: relative;
     color: white;
+    height: 200px;
+    overflow: hidden;
 
 }
 
@@ -90,6 +124,13 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     color: #dc2c0b;
 }
 
+.prix{
+    margin: 0;
+    font-size: 1.2em;
+    color: #108141;
+}
+
+
 .quote-lacentrale{
     display: block;
     margin-right: 15%;
@@ -97,7 +138,36 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 }
 
 
+.text-hero{
+    position: absolute;
+    color: #2c4495;
+    font-size: 4em;
+}
 
+
+.wrapper{
+    position: relative;
+    top: 20%;
+    left: 10%;
+}
+
+
+
+
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #2a2a2a !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.navbar-nav>li>a:hover {
+    color: #2c4495!important;
+}
 
 
 
@@ -263,10 +333,23 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     text-align: center;
 }
 
+.fb-icon, .is-icon, .lk-icon{
+    color: #fff;
+}
 
+.fb-icon:hover{
+    color: #2c4495;
+}
 
+.is-icon:hover{
+    background: -webkit-gradient(linear, left top, left bottom, from(#d6249f), to(#285AEB));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
-
+.lk-icon:hover{
+    color: #0077b5;
+}
 
 .navbar-inverse{
     background-color: #fff!important;
@@ -390,8 +473,9 @@ textarea.form-control{
 
 .adressepolice {
 
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: #fff;
+    font-weight: 400;
 }
 
 
@@ -451,6 +535,46 @@ textarea.form-control{
 }
 
 
+.text-apropos{
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-top: 30px;
+    font-size: 1.5em;
+    text-align: justify;
+}
 
 
+@media (min-width: 576px) {
+    .container-img{
+        height: 400px;
+    } }
 
+
+@media (min-width: 768px) {
+    .container-img{
+        height: 400px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-img{
+        height: 150px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .container-img{
+        height: 200px;
+    }
+}
+
+#menu-avds{
+    background: #fff;
+    z-index: 10;
+}
+
+nav ul li{
+    float: none;
+}

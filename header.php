@@ -54,25 +54,33 @@
           ?>
 
 
+
+
+
           <nav class="navbar navbar-inverse">
               <div class="container-fluid">
                   <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
                       <a class="navbar-brand" href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="img-responsive" ></a>
                   </div>
-                  <?php
-                  wp_nav_menu( array(
-                      'menu' => 'avds',
-                      'depth' => 1,
-                      'container' => false,
-                      'menu_class' => 'nav navbar-nav navbar-right',
-                      'fallback_cb' => 'wp_page_menu',
-                  ));
-                  ?>
+                  <div class="collapse navbar-collapse" id="myNavbar">
+                      <?php
+                      wp_nav_menu( array(
+                          'menu' => 'avds',
+                          'depth' => 1,
+                          'container' => false,
+                          'menu_class' => 'nav navbar-nav navbar-right',
+                          'fallback_cb' => 'wp_page_menu',
+                      ));
+                      ?>
+
+                  </div>
               </div>
-
-
-
           </nav>
 
-    <?php wp_footer(); ?>
+
 

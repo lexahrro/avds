@@ -3,6 +3,10 @@
 <section class="section-header">
     <div class="parallax-container">
         <div class="parallax"><img src="<?php echo get_template_directory_uri(); ?>/img/header.jpeg" class="img-responsive"></div>
+        <div class="wrapper">
+        <h1 class="text-hero">Votre Voiture <br> d'occasion au <br> meilleur prix.</h1>
+        <a class="btn btn-header" href="http://pros.lacentrale.fr/C043313">Accéder aux annonces</a>
+        </div>
     </div>
 </section>
 
@@ -36,7 +40,16 @@
                 <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="img-responsive" />
                 <?php if( get_field('vendu') == 'Oui' ): ?>
                     <div class="bottom-right"><h3 class="vendu">Vendu</h3></div>
+                    <?php else: ?>
+                    <div class="bottom-right"><h3 class="prix"><?php the_field('prix'); ?> €</h3></div>
                 <?php endif; ?>
+
+                <?php if(get_field('vendu') == 'Non' ) : ?>
+                    <?php the_field('prix'); ?>
+                <?php else : ?>
+                    <div class="bottom-right"><h3 class="vendu">Vendu</h3></div>
+                <?php endif; ?>
+
             </div>
             <?php endif; ?>
             <div class="row desc-annonces">
@@ -73,7 +86,7 @@
 
         <div class="col-md-4  blockmini">
 
-            <a class="btn btn-lacentrale pull-right" href="">Toutes les annonces</a>
+            <a class="btn btn-lacentrale pull-right" href="http://pros.lacentrale.fr/C043313">Toutes les annonces</a>
 
             <p class="pull-right quote-lacentrale">Via le site de LaCentrale.fr</p>
 
@@ -88,7 +101,7 @@
 
 
 
-<section id="apropos" class="sectionapropos" style="background-color: #022395">
+<section id="apropos" class="section-apropos section-padding">
 
     <div class="container">
 
@@ -99,18 +112,18 @@
 
         <div class="row">
 
-            <div class="col-md-12"><img src="<?php echo get_template_directory_uri(); ?>/img/header.jpeg"  class="img-responsive imgapropos">
-                <p class="paragraphe lead"> Vous êtes à la recherche d'un vehicule d'occasion ou d'un potentiel acheteur pour votre véhicule ?
+            <div class="col-md-12"><img src="<?php echo get_template_directory_uri(); ?>/img/bg_contact.jpg"  class="img-responsive imgapropos">
+                <p class="text-apropos"> Vous êtes à la recherche d'un vehicule d'occasion ou d'un potentiel acheteur pour votre véhicule ?
                     Nous sommes à votre service, en nous proposant une grande diversité de véhicules d'occasion récents, toutes marques,
-                    dotés de d'une garantie européenne de 6 à 24 mois, révision incluse, avec bientôt dans notre gamme des vehicules éléctrique.</p></div>
+                    dotés de d'une garantie européenne de 6 à 24 mois, révision incluse, avec bientôt dans notre gamme des vehicules éléctriques.</p></div>
 
         </div>
 
         <div class="row">
 
-            <div class="col-md-12">
+            <div class="col-md-4 col-md-offset-4">
 
-                <a class="btn btn-success center-block plus text-center" href="">Toutes les annonces</a>
+                <a class="btn btn-plus text-center" href="">En savoir plus</a>
 
             </div>
 
@@ -296,35 +309,31 @@
 
         <div class="row">
 
-            <div class="col-md-4 col-md-offset-4">
+        <div class="col-md-4 col-md-offset-4">
 
-                <p class="credits">2017 © AUTOMOBILES DU VAL DE SEINE<br>TVA Intracommunautaire<br> - 82534063100019 - RCS
-                </p>
-
-
-
-                <div class="row deplacementréseaux">
-
-                    <div class="col-md-4 col-xs-4 facebook">
-                        <a href="#" target="_blank"><i  class="fa fa-facebook fa-5x" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="col-md-4 col-xs-4 insta">
-                        <a href="" target="_blank"><i class="fa fa-instagram fa-5x" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="col-md-4 col-xs-4 linkedin">
-                        <a href="" target="_blank"><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a>
-                    </div>
-
-                </div>
+            <p class="credits"><b>2017 © AUTOMOBILES DU VAL DE SEINE</b>b><br>TVA Intracommunautaire<br> - 82534063100019 - RCS
+        </p>
 
 
 
+        <div class="row deplacementréseaux">
+
+            <div class="col-md-4 col-xs-4 facebook">
+                <a href="#" target="_blank"><i  class="fa fa-facebook fa-5x fb-icon" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-md-4 col-xs-4 insta">
+                <a href="" target="_blank"><i class="fa fa-instagram fa-5x is-icon" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-md-4 col-xs-4 linkedin">
+                <a href="" target="_blank"><i class="fa fa-linkedin-square fa-5x lk-icon" aria-hidden="true"></i></a>
             </div>
 
-            <div class="row">
-                <div class="col-md-12"></div>
-            </div>
         </div>
+
+
+
+        </div>
+
     </div>
 
 
