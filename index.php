@@ -94,7 +94,7 @@ require_once('header.php') ?>
 
             <div class="col-md-8">
 
-                <h1 class="annonces-call">Retrouvez plus de vehicules sur notre vitrine LaCentrale.fr</h1>
+                <h2 class="annonces-call">Retrouvez plus de vehicules sur notre vitrine LaCentrale.fr</h2>
 
             </div>
 

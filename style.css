@@ -10,8 +10,37 @@ p{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 }
+/* --------------------------- Styles titres sections ------------------------------- */
 
+.hr_white{
+    width: 10%;
+    color: #fff;
+    border-top: 2px solid #fff;
+}
 
+.hr_black{
+    width: 10%;
+    color: #000000;
+    border-top: 2px solid #000000;
+}
+
+.title-section-white{
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+.title-section-black{
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+}
+
+.section-padding{
+    padding: 60px 0px;
+}
+
+/* ------------------------------------- Navbar ----------------------------------------------- */
 
 .navbar-inverse{
     background-color: #fff!important;
@@ -27,18 +56,149 @@ p{
     padding: 10px;
 }
 
-.section-annonces{
 
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #2a2a2a !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.navbar-nav>li>a:hover {
+    color: #2c4495!important;
+}
+
+#menu-avds{
+    background: #fff;
+    z-index: 10;
+}
+
+nav ul li{
+    float: none;
+}
+
+
+
+/* -------------------------------------- Section annonces ------------------------------------ */
+
+.section-annonces{
     background-color: #fff;
 }
+
+
+.bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background:#000;
+    padding: 5px 15px;
+    text-transform: uppercase;
+
+}
+
+.vendu{
+    margin: 0;
+    font-size: 1.2em;
+    color: #dc2c0b;
+}
+
+.prix{
+    margin: 0;
+    font-size: 1.2em;
+    color: #108141;
+}
+
+
+
+.container-img{
+    position: relative;
+    color: white;
+    height: 200px;
+    overflow: hidden;
+
+}
+
+.quote-lacentrale{
+    display: block;
+    margin-right: 15%;
+    margin-top: 10px;
+}
+
+.btn-lacentrale{
+    margin-top: 20px;
+    padding: 30px 50px;
+    line-height: 0;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+.annonces-call{
+    color: #2c4495;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.marque{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.modele, .km{
+    margin-top: 0;
+}
+
+.modele, .km, .annee{
+    font-weight: 300;
+}
+
+
+.blockmini {
+    margin-top: 10px;
+}
+
+.desc-annonces{
+    margin: 0;
+}
+
+
+/* ---------------------------------- Section header --------------------------------- */
+
 
 .section-header{
     z-index: 1;
 }
 
-.section-apropos{
-    background-color: #2c4495;
+
+
+.text-hero{
+    position: absolute;
+    color: #2c4495;
+    font-size: 4em;
 }
+
+
+.wrapper{
+    position: relative;
+    top: 20%;
+    left: 10%;
+}
+
+
+.btn-header{
+    position: absolute;
+    margin-top: 20px;
+    padding: 30px 50px;
+    line-height: 0;
+    text-transform: uppercase;
+    border-radius: 0;
+    transform: translate(0%, 350%);
+}
+/* ----------------------------------------- Section contact ----------------------------------- */
+
 
 .input-name{
     border-radius: 0;
@@ -60,358 +220,6 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 .form-group{
     margin-bottom: 0;
 }
-
-
-.btn-envoyer{
-    margin-top: 20px;
-    padding: 30px 50px;
-    line-height: 0;
-    text-transform: uppercase;
-    border-radius: 0;
-}
-
-
-
-
-.btn-lacentrale{
-    margin-top: 20px;
-    padding: 30px 50px;
-    line-height: 0;
-    text-transform: uppercase;
-    border-radius: 0;
-}
-
-.btn-header{
-    position: absolute;
-    margin-top: 20px;
-    padding: 30px 50px;
-    line-height: 0;
-    text-transform: uppercase;
-    border-radius: 0;
-    transform: translate(0%, 350%);
-}
-
-
-.btn-plus{
-    margin-top: 20px;
-    padding: 30px 50px;
-    line-height: 0;
-    text-transform: uppercase;
-    border-radius: 0;
-}
-
-.bottom-right {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background:#000;
-    padding: 5px 15px;
-    text-transform: uppercase;
-
-}
-
-.container-img{
-    position: relative;
-    color: white;
-    height: 200px;
-    overflow: hidden;
-
-}
-
-.vendu{
-    margin: 0;
-    font-size: 1.2em;
-    color: #dc2c0b;
-}
-
-.prix{
-    margin: 0;
-    font-size: 1.2em;
-    color: #108141;
-}
-
-
-.quote-lacentrale{
-    display: block;
-    margin-right: 15%;
-    margin-top: 10px;
-}
-
-
-.text-hero{
-    position: absolute;
-    color: #2c4495;
-    font-size: 4em;
-}
-
-
-.wrapper{
-    position: relative;
-    top: 20%;
-    left: 10%;
-}
-
-
-
-
-.navbar-nav>li>a {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #2a2a2a !important;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
-    font-weight: 600;
-}
-
-.navbar-nav>li>a:hover {
-    color: #2c4495!important;
-}
-
-
-
-
-
-/* Navbar du one page */
-
-.navbar-brand {
-    font-size: 24px;
-}
-
-.navbar-container {
-    padding: 20px 0 20px 0;
-}
-
-.navbar.navbar-fixed-top.fixed-theme {
-    background-color: #222;
-    border-color: #080808;
-    box-shadow: 0 0 5px rgba(0,0,0,.8);
-}
-
-.navbar-brand.fixed-theme {
-    font-size: 18px;
-}
-
-.navbar-container.fixed-theme {
-    padding: 0;
-}
-
-.navbar-brand.fixed-theme,
-.navbar-container.fixed-theme,
-.navbar.navbar-fixed-top.fixed-theme,
-.navbar-brand,
-.navbar-container{
-    transition: 0.8s;
-    -webkit-transition:  0.8s;
-}
-
-
-.lanavbar {
-    height: 200px;
-    position: fixed;
-    top: 0;
-    overflow: hidden;
-}
-
-
-
-
-
-/* fin navbar du one page */
-
-
-.imageonepage {
-    background-image: url("../img/onepage1web.jpg");
-    height: 1300px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: -450px;
-    width: 100%!important;
-
-}
-
-
-
-
-.title {
-    font-size: 3em;
-    font-family: 'Trocchi', bold, sans-serif;
-    margin-top: 120px;
-    margin-left: -140px;
-    color: #004EB2!important;
-}
-
-
-@media (min-width: 950px) {
-    .container .title {
-        width: 700px;
-    }
-}
-
-
-
-
-/* deuxième partie les annonces */
-
-
-
-
-.titredeux {
-
-    background-color: white!important;
-    height: 400px;
-    margin-top: -340px;
-    background-size: contain;
-
-}
-
-
-.titredeuxpolice {
-
-    margin-left: 630px;
-    font-family: 'Raleway', serif;
-    margin-top: 70px;
-    font-size: 2.5em;
-    color: white!important;
-}
-
-
-
-
-.title-section-white{
-    text-transform: uppercase;
-    text-align: center;
-    color: #fff;
-}
-
-.title-section-black{
-    text-transform: uppercase;
-    text-align: center;
-    color: #000;
-}
-
-.hr_white{
-    width: 10%;
-    color: #fff;
-    border-top: 2px solid #fff;
-}
-
-.hr_black{
-    width: 10%;
-    color: #000000;
-    border-top: 2px solid #000000;
-}
-
-.desc-annonces{
-    margin: 0;
-}
-
-
-
-
-.inscription {
-
-    margin-left: 550px;
-    margin-top: 80px;
-    height: 200px;
-}
-
-.inscription2 {
-
-    margin-top: -35px;
-}
-
-.credits{
-    margin-top: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-}
-.text-popup{
-    text-align: justify;
-    font-size: 1.3em;
-}
-
-.liste-popup{
-    margin-left: 40px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.3em;
-    font-weight: 300;
-}
-
-.liste-popup>li{
-    list-style-type: circle!important;
-}
-
-
-
-.blog{
-    margin-top: 70px;
-}
-.cross{
-    font-size: 3em;
-}
-
-.btn-close{
-    padding: 15px 30px!important;
-}
-
-.facebook , .insta, .linkedin{
-    text-align: center;
-}
-
-.fb-icon, .is-icon, .lk-icon{
-    color: #fff;
-}
-
-.fb-icon:hover{
-    color: #2c4495;
-}
-
-.is-icon:hover{
-    background: -webkit-gradient(linear, left top, left bottom, from(#d6249f), to(#285AEB));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.lk-icon:hover{
-    color: #0077b5;
-}
-
-.navbar-inverse{
-    background-color: #fff!important;
-    border: 0!important;
-    border-radius: 0!important;
-    margin-bottom: 0!important;
-}
-
-
-/* Mon css */
-
-/* Style Navbar css */
-
-
-.imageone {
-
-    background-size: contain;
-}
-
-.premierblock {
-    background-color: #022395!important;
-}
-
-
-/* Style Navbar css */
-
-
-
-
-.section-padding{
-    padding: 60px 0px;
-}
-
-
 
 .section-contact {
 
@@ -445,16 +253,13 @@ textarea::placeholder {
 }
 
 
-
-.couleurstyle {
-
-    background-color: #022395!important;
+.btn-envoyer{
+    margin-top: 20px;
+    padding: 30px 50px;
+    line-height: 0;
+    text-transform: uppercase;
+    border-radius: 0;
 }
-
-textarea.form-control{
-    padding: 0!important;
-}
-
 
 .title-contact{
     text-transform: uppercase;
@@ -463,110 +268,34 @@ textarea.form-control{
     font-size: 2em;
 }
 
-
-
-
-/* Fin Navbar et premier block */
-
-
-
-
-
-.blockmini {
-
-    margin-top: 10px;
-
-}
-
-
-.couleursstyles3 {
-
-    background-color: black;
-
-
-}
-
-
-
-
-
 .adresse {
     color: white;
     line-height: 0;
     vertical-align: middle;
-
-
 }
 
 
 .adressepolice {
-
     font-size: 1.3em;
     color: #fff;
     font-weight: 400;
 }
 
 
-.adresspolicefirst {
 
-    font-size: 2em;
+/* ------------------------------------ Section a propos ----------------------------------- */
+
+.section-apropos{
+    background-color: #2c4495;
 }
 
 
-.adressepolice2 {
-
-    font-size: 1.2em;
-}
-
-.adressepolice3 {
-
-    font-size: 1.2em ;
-}
-
-
-
-.premeirblockformulaire {
-
-    margin-left: -50px;
-}
-
-
-.finformulaire {
-
-    background-color: #000000;
-    height: 100px;
-}
-
-
-.footer {
-    background-color: #202226;
-}
-
-
-
-.deplacementréseaux {
-    margin-top: 40px;
-}
-
-
-.marque{
-    font-weight: 600;
+.btn-plus{
+    margin-top: 20px;
+    padding: 30px 50px;
+    line-height: 0;
     text-transform: uppercase;
-}
-
-.modele, .km{
-    margin-top: 0;
-}
-
-.modele, .km, .annee{
-    font-weight: 300;
-}
-
-
-.annonces-call{
-    color: #2c4495;
-    line-height: 1.2;
-    font-weight: 600;
+    border-radius: 0;
 }
 
 
@@ -578,6 +307,51 @@ textarea.form-control{
     font-size: 1.5em;
     text-align: justify;
 }
+
+
+/* --------------------------------------------- Footer --------------------------------- */
+
+.facebook , .insta, .linkedin{
+    text-align: center;
+}
+
+.fb-icon, .is-icon, .lk-icon{
+    color: #fff;
+}
+
+.fb-icon:hover{
+    color: #2c4495;
+}
+
+.is-icon:hover{
+    background: -webkit-gradient(linear, left top, left bottom, from(#d6249f), to(#285AEB));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.lk-icon:hover{
+    color: #0077b5;
+}
+
+.credits{
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.footer {
+    background-color: #202226;
+}
+
+.deplacementréseaux {
+    margin-top: 40px;
+}
+
+
+/* ------------------------------------ Responsive medias queries ------------------------------- */
+
+
 @media (max-width:500px){
     .text-hero{
         font-size: 2.5em;
@@ -598,8 +372,6 @@ textarea.form-control{
 }
 
 @media (min-width: 576px) {
-
-
     .container-img{
         height: 250px;
     }
@@ -626,24 +398,11 @@ textarea.form-control{
     }
 }
 
-#menu-avds{
-    background: #fff;
-    z-index: 10;
-}
 
-nav ul li{
-    float: none;
-}
+/* -------------------------------------------- Full screen modal -------------------------------- */
 
 .modal.modal-fullscreen {
-    /* Maximize the main wrappers on the screen */
-    /* Make the parent wrapper of the modal box a full-width block */
-    /* Remove borders and effects on the content */
-    /**
-       * /!\ By using this feature, you force the header and footer to be placed
-       * in an absolute position. You must handle by yourself the margin of the
-       * content.
-       */
+
 }
 .modal.modal-fullscreen .modal-dialog,
 .modal.modal-fullscreen .modal-content {
@@ -687,3 +446,34 @@ nav ul li{
 .modal.modal-fullscreen.force-fullscreen .modal-footer {
     bottom: 0;
 }
+
+.cross{
+    font-size: 3em;
+}
+
+.btn-close{
+    padding: 15px 30px!important;
+}
+
+.text-popup{
+    text-align: justify;
+    font-size: 1.3em;
+}
+
+.liste-popup{
+    margin-left: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+.liste-popup>li{
+    list-style-type: circle!important;
+}
+
+/* --------------------------------------------- Page affichage articles --------------------------------- */
+
+.blog{
+    margin-top: 70px;
+}
+
