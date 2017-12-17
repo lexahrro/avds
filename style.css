@@ -328,7 +328,34 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     text-transform: uppercase;
     color: #fff;
 }
+.text-popup{
+    text-align: justify;
+    font-size: 1.3em;
+}
 
+.liste-popup{
+    margin-left: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+.liste-popup>li{
+    list-style-type: circle!important;
+}
+
+
+
+.blog{
+    margin-top: 70px;
+}
+.cross{
+    font-size: 3em;
+}
+
+.btn-close{
+    padding: 15px 30px!important;
+}
 
 .facebook , .insta, .linkedin{
     text-align: center;
@@ -522,7 +549,18 @@ textarea.form-control{
 }
 
 
+.marque{
+    font-weight: 600;
+    text-transform: uppercase;
+}
 
+.modele, .km{
+    margin-top: 0;
+}
+
+.modele, .km, .annee{
+    font-weight: 300;
+}
 
 
 .annonces-call{
@@ -540,12 +578,33 @@ textarea.form-control{
     font-size: 1.5em;
     text-align: justify;
 }
+@media (max-width:500px){
+    .text-hero{
+        font-size: 2.5em;
+    }
 
+    .btn-header{
+        transform: translate(0%, 300%);
+        padding: 20px 40px;
+    }
+    .parallax-container{
+        height: 350px;
+    }
+
+    .container-img{
+        height: 150px;
+    }
+
+}
 
 @media (min-width: 576px) {
+
+
     .container-img{
-        height: 400px;
-    } }
+        height: 250px;
+    }
+
+}
 
 
 @media (min-width: 768px) {
@@ -574,4 +633,57 @@ textarea.form-control{
 
 nav ul li{
     float: none;
+}
+
+.modal.modal-fullscreen {
+    /* Maximize the main wrappers on the screen */
+    /* Make the parent wrapper of the modal box a full-width block */
+    /* Remove borders and effects on the content */
+    /**
+       * /!\ By using this feature, you force the header and footer to be placed
+       * in an absolute position. You must handle by yourself the margin of the
+       * content.
+       */
+}
+.modal.modal-fullscreen .modal-dialog,
+.modal.modal-fullscreen .modal-content {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.modal.modal-fullscreen .modal-dialog {
+    margin: 0;
+    width: 100%;
+    animation-duration:0.6s;
+}
+.modal.modal-fullscreen .modal-content {
+    border: none;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: inherit;
+    -moz-box-shadow: inherit;
+    -o-box-shadow: inherit;
+    box-shadow: inherit;
+    /* change bg color below */
+    /* background:#1abc9c; */
+}
+.modal.modal-fullscreen.force-fullscreen {
+    /* Remove the padding inside the body */
+}
+.modal.modal-fullscreen.force-fullscreen .modal-body {
+    padding: 0;
+}
+.modal.modal-fullscreen.force-fullscreen .modal-header,
+.modal.modal-fullscreen.force-fullscreen .modal-footer {
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+.modal.modal-fullscreen.force-fullscreen .modal-header {
+    top: 0;
+}
+.modal.modal-fullscreen.force-fullscreen .modal-footer {
+    bottom: 0;
 }

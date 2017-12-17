@@ -9,7 +9,7 @@
       <!--Import materialize.css-->
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/materialize.css" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css1/style.css" type="text/css">
@@ -23,7 +23,7 @@
 
 
         <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/js/materialize.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
         <script>
@@ -57,7 +57,7 @@
 
 
 
-          <nav class="navbar navbar-inverse">
+          <nav class="navbar navbar-inverse navbar-fixed-top">
               <div class="container-fluid">
                   <div class="navbar-header">
                       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -65,7 +65,7 @@
                           <span class="icon-bar"></span>
                           <span class="icon-bar"></span>
                       </button>
-                      <a class="navbar-brand" href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="img-responsive" ></a>
+                      <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="img-responsive" ></a>
                   </div>
                   <div class="collapse navbar-collapse" id="myNavbar">
                       <?php

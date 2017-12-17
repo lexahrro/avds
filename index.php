@@ -1,4 +1,11 @@
-<?php require_once('header.php') ?>
+<?php
+
+/*
+Template Name: Accueil
+*/
+
+
+require_once('header.php') ?>
 
 
 <!----------- Section Accueil ----------------->
@@ -12,8 +19,8 @@
         </div>
 
         <div class="wrapper">
-            <h1 class="text-hero">Votre Voiture <br> d'occasion au <br> meilleur prix.</h1>
-            <a class="btn btn-header" href="http://pros.lacentrale.fr/C043313">Accéder aux annonces</a>
+            <h1 class="text-hero">Votre voiture <br> d'occasion au <br> meilleur prix.</h1>
+            <button class="btn btn-header" href="http://pros.lacentrale.fr/C043313">Accéder aux annonces</button>
         </div>
 
     </div>
@@ -62,18 +69,18 @@
 
                     <div class="row desc-annonces">
                         <div class="col-md-7 col-xs-7">
-                            <h4><?php the_field('marque'); ?></h4>
+                            <h4 class="marque"><?php the_field('marque'); ?></h4>
                         </div>
                         <div class="col-md-5 col-xs-5">
-                            <h4 class="pull-right"><?php the_field('annee'); ?></h4>
+                            <h4 class="pull-right annee"><?php the_field('annee'); ?></h4>
                         </div>
                     </div>
                     <div class="row desc-annonces">
                         <div class="col-md-7 col-xs-7">
-                            <h4><?php the_field('modèle'); ?></h4>
+                            <h4 class="modele"><?php the_field('modèle'); ?></h4>
                         </div>
                         <div class="col-md-5 col-xs-5">
-                            <h4 class="pull-right"><?php the_field('kilometrage'); ?> km</h4>
+                            <h4 class="pull-right km"><?php the_field('kilometrage'); ?> km</h4>
                         </div>
                     </div>
                 </div>
@@ -105,6 +112,49 @@
 
 </section>
 
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade modal-fullscreen" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="container">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Bienvenue au garage Automobile du Val de Seine ! </h5>
+                <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="cross">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="text-popup">
+                    Vous êtes à la recherche d’un véhicule d’occasion ou d’un potentiel acheteur pour votre véhicule ? Nous sommes à votre service, en vous proposant une grande diversité de véhicules d’occasion récents, toutes marques, dotés d’une garantie européenne de 6 à 24 mois, révision incluse, avec bientôt dans notre gamme des véhicules électriques.
+                    Une étude de financement personnalisée en coopération avec nos partenaires est aussi disponible pour la vente, l’achat ou la reprise de véhicule aux conditions de l’Argus.
+
+                    Chaque jour, notre équipe contribue à remplir les tâches suivantes :
+                </p>
+                <ul class="liste-popup">
+                    <li>Pouvoir vous conseiller au mieux sur les véhicules du catalogue</li>
+                    <li>Fournir un service de qualité de la part de toute l’équipe en vous permettant de nous contacter par mail ou par téléphone. Nous recevons également sur rendez-vous.</li>
+                    <li>Etre transparent sur les conditions et les garanties des véhicules en vous délivrant des devis clairs et précis</li>
+                    <li>Le renouvellement de nos offres en promettant de toujours mettre en avant la vente des véhicules d’occasion les plus récents</li>
+                    <li>Transactions sécurisées</li>
+                </ul>
+
+                <p class="text-popup">
+
+                    La concession Automobile Val-de-Seine est éco-responsable. C’est pourquoi nous sommes très fiers d’annoncer l'arrivée prochaine de véhicules propres.
+                    Si vous venez en voiture, nous sommes situés à 2kms de l’autoroute A15, sortie N°5 la patte d’oie d’Herblay.
+                    Pour vous rendre chez nous en transport, nous sommes à proximité de la gare de La Frette -Montigny (7 mn à pied), ligne J desservie par Paris St Lazare.
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-- Button trigger modal -->
+
 
 <!----------------------- Section A propos ------------------------>
 
@@ -130,8 +180,9 @@
 
             <div class="col-md-4 col-md-offset-4">
 
-                <a class="btn btn-plus text-center" href="">En savoir plus</a>
-
+                <button type="button" class="btn btn-plus text-center center-block" data-toggle="modal" data-target="#exampleModal">
+                    En savoir plus
+                </button>
             </div>
 
         </div>
@@ -172,7 +223,7 @@
 <!----- Section Contact ----->
 
 
-<section class="section-contact section-padding">
+<section id="contact" class="section-contact section-padding">
 
     <div class="container">
 
@@ -244,38 +295,7 @@
 
 <!------ Footer  ------->
 
-
-<section id="footer" class="footer">
-
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-md-4 col-md-offset-4">
-
-                <p class="credits"><b>2017 © AUTOMOBILES DU VAL DE SEINE</b><br>TVA Intracommunautaire<br> - 82534063100019 - RCS</p>
-
-                <div class="row deplacementréseaux">
-
-                    <div class="col-md-4 col-xs-4 facebook">
-                        <a href="#" target="_blank"><i  class="fa fa-facebook fa-5x fb-icon" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="col-md-4 col-xs-4 insta">
-                        <a href="" target="_blank"><i class="fa fa-instagram fa-5x is-icon" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="col-md-4 col-xs-4 linkedin">
-                        <a href="" target="_blank"><i class="fa fa-linkedin-square fa-5x lk-icon" aria-hidden="true"></i></a>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
+<?php get_footer(); ?>
 
 </body>
 </html>
